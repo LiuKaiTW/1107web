@@ -39,9 +39,11 @@ public class DBProductListener implements ServletContextListener {
 	}
 
 	public ArrayList prepareArrayList() {
-		ArrayList list;
-		ProductDAO dao = new ProductDAO();
-		list = dao.getProductList();
+//		ArrayList list;
+//		ProductDAO dao = new ProductDAO();
+//		list = dao.getProductList();
+//		return list;
+		ArrayList list= new ProductDAO().getProductList();
 		return list;
 	}
 
